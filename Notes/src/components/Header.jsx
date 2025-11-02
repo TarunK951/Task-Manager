@@ -30,7 +30,7 @@ function Header({ setShowArchived, setShowBin }) {
             src="https://img.icons8.com/?size=100&id=kgTtmFTRbaRx&format=png&color=000000"
             alt=""
           />
-          <p className="notesLogo">Notes</p>
+          <p className="notesLogo">Task manager</p>
         </div>
         <div className="head-content">
           <div className="head-main">
