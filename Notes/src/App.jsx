@@ -29,14 +29,14 @@ function App() {
     setDisplay(null);
   };
 
-  // ✅ Unarchive Note
+  //  Unarchive Note
   const unArchive = (note) => {
     setAllNotes((prev) => [...prev, { ...note, archived: false }]);
     setArchiveNotes((prev) => prev.filter((item) => item.id !== note.id));
     setDisplay(null);
   };
 
-  // ✅ Delete from All Notes or Archive, move to Bin
+  //  Delete from All Notes or Archive, move to Bin
   const DeleteBtn = (note) => {
     setBin((prev) => [...prev, note]);
     setAllNotes((prev) => prev.filter((n) => n.id !== note.id));
@@ -44,7 +44,7 @@ function App() {
     setDisplay(null);
   };
 
-  // ✅ Permanent delete from Bin
+  //  Permanent delete from Bin
   const permanentDelete = (note) => {
     setBin((prev) => prev.filter((n) => n.id !== note.id));
     setDisplay(null);
